@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url('backgroundfinal.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}  
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .bars{
+    color: aliceblue;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    background-color: orange;
+    color: aliceblue;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale 0.2 ease;
+}
+
+.action-btn.hover{
+    scale: 1.05;
+    color: aliceblue;
+}
+
+.action-btn.active{
+    scale: 0.95;
+}
+h1{
+    font-size: 68px; 
+    font-family: "Frank Ruhl Libre";
+    font-weight: Black;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    background-color: white;
+    width: 275px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 10px 10px 39px 2px rgba(0,0,0,0.25);
+    margin-top: 10px;
+}
+.son-item{
+    padding: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Responsove Design */
+@media(max-width:992px){
+    .navbar .links,
+    .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .bars{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="detail.css"> -->
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        margin:0px ; 
+        
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .table th,
+    .table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .table th {
+        background-color: #f2f2f2;
+    }
+    
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    .table tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    @media (min-width: 992px) {
+        iframe {
+            width: 90%;
+            height: 450px;
+        }
+    
+        .detail {
+            margin-top: 200px;
+            
+        }
+        
+        .container {
+            margin-bottom: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .flex-container {
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+            height: 100%;
+            background-color: #C683D7;
+        }
+    
+        .map-detail{
+            width: 60%;
+        }
+    
+        .contact-detail {
+            width: 40%;
+        }
+    }
+    
+    .top-nav {
+        background-color: black;
+        margin: 0px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 200px;
+        height: 80px;
+        width: 100%;
+    }
+    
+    .title {
+        margin-left: 50px;
+        border-right: 2px solid white;
+        padding-right: 50px;
+    }
+    
+    .top-nav a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        margin-right: 20px;
+    }
+    
+    .logo {
+        margin-right: 100px;
+        width: 50px;
+        height: auto;
+        padding-left: 10px;
+    }
+    
+    .title-logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .Login {
+        display: flex;
+    }
+    
+    .Login > a {
+        border-radius: 10px;
+        border: 10px;
+        background-color: purple;
+        margin-left: 20px;
+        padding: 15px;
+    }
+    
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        height: 200px;
+        background-color: black ;
+        font-size: 22px; /* Adjust font size as needed */
+        font-family: 'Arial', sans-serif;
+       } 
+      
+      .content{
+        color:rgb(189, 21, 21);
+        text-align: center;
+       }
+      .About-us{
+        margin-top: 10px ;
+      }
+      .About-us > a {
+        text-decoration: none; 
+        color:white ;
+        margin-right:15px ;
+      }
+      
+      
+      
+      
+      .title-logo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        justify-content: center; /* Center the content vertically */
+        gap: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div class="top-nav">
+    <div class="title-logo">
+      <a href="" class="title">Sport <br> Peace</a>
+      <img class="logo" src="logo.png" alt="logonav">
+    </div>
+    <div class="left-links">
+      <a href="/Web Final Project /index2.html">Home </a>
+      <a href="/Web Final Project /Final Project Shop - Copy/index_shop.html">Sport Store</a>
+      <a href="/Web Final Project /index2.html">News</a>
+      <a href="/Web Project-hak/index.html">Sport Pitch </a>
+      <a href="/Login-Signup/about.html">About Us</a>
+    </div>
+    <div class="Login">
+      <a href="/Login-Signup/index.html">Sign Up</a>
+      <a href="/Login-Signup/login.html">Log In</a>
+    </div>
+  </div>
+
+    <section class="detail">
+        <h1>Sport Location</h1>
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-item map-detail">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.9158899524564!2d104.91115297533958!3d11.557887288642414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951464b11d2d3%3A0xa048016a8e8bc21c!2sOlympic%20Stadium%20Pool!5e0!3m2!1sen!2skh!4v1700731028924!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Details</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci aliquid neque corrupti nobis sit voluptatibus, nesciunt tenetur commodi in rem, praesentium minima repudiandae error laborum repellendus exercitationem quia facilis similique!</p>
+                </div>
+                <div class="flex-item contact-detail">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>Email Address : </li>
+                        <li>Phone Number  :</li>
+                        <li>Facebook      : </li>
+                        <li>Telegram      :</li>
+                    </ul>
+                    <h2>Opening Time</h2>
+                    <table class="table borderless time-table">
+                        <thead>
+                          <tr>
+                            <th>Day</th>
+                            <th>Time</th>                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                                               
+                        <tr>
+                            <td>Monday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Tuesday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Wednesday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Thursday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Friday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Saturday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                               
+                        <tr>
+                            <td>Sunday</td>
+                            <td><i class="fa fa-clock-o"></i> 7 AM - 22 PM</td>        
+                          </tr>
+                                                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="content">
+          <p>Be a Part of our member! GRAB IT NOW!</p>
+          <div class="About-us">
+            <a href="">Features</a>
+            <a href="">Plans & Pricing</a>
+            <a href="">New & Blogs</a>
+            <a href="">Careers</a>
+            <a href="">Terms</a>
+            <a href="">Privacy</a>
+            <a href="">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
